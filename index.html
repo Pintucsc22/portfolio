@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pintu Garai — Portfolio</title>
+  <meta name="description" content="Pintu Garai — DevOps & Full-Stack Portfolio" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    .hero-card {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+    .cta {
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      margin-top: 20px;
+      padding: 12px 16px;
+      background: rgba(0,0,0,0.15);
+      border-radius: 10px;
+      line-height: 1.6;
+      clear: both;
+    }
+    .photo-wrap {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .photo img {
+      max-width: 300px;
+      border-radius: 20px;
+    }
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-info {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="nav-wrap">
+      <div class="logo"><div class="dot">PG</div><div>Pintu Garai</div></div>
+      <nav>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="about" class="hero-section">
+      <div class="container hero">
+        <div class="hero-card">
+          <p class="intro">Hello, I'm</p>
+          <h1 class="name">Pintu Garai</h1>
+          <p class="title">DevOps | Linux Enthusiast | Full-Stack Developer</p>
+          <p class="description">I build reliable systems and developer-friendly tools. Experienced in Docker, Jenkins, AWS, Linux administration and full-stack JavaScript. I enjoy automating workflows and shipping usable web applications.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Contact Me</a>
+            <a class="btn btn-gradient" href="assets/Pintu_Resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="contact-info">
+            <strong>Location:</strong> Bankura, West Bengal<br>
+            <strong>Email:</strong> <a href="mailto:pintugarai.csc22@gmail.com">pintugarai.csc22@gmail.com</a><br>
+            <a href="https://github.com/Pintucsc22" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/pintugarai993" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo">
+            <img src="assets/pintu-photo.jpg" alt="Pintu Garai">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">Docker & Containers — Image builds, Dockerfile, orchestration</div>
+          <div class="skill">AWS (EC2, S3, IAM) — Deployment & Storage Management</div>
+          <div class="skill">Linux & Bash — Kali, Ubuntu, CLI, shell scripting</div>
+          <div class="skill">Frontend — HTML5, CSS3, Responsive Design</div>
+          <div class="skill">CI/CD — Jenkins Pipelines, GitHub Integration</div>
+          <div class="skill">Tools — Git, VS Code, Postman, Curl</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Online Exam System</h3>
+            <p>Full-stack exam platform with authentication, exam flow, and automatic result evaluation. Dockerized backend & frontend, basic CI/CD with Jenkins.</p>
+            <p><strong>Tech:</strong> Node.js, Express, MongoDB, React, Docker, Jenkins</p>
+            <a href="https://github.com/Pintucsc22/online-exam-system" target="_blank">GitHub</a>
+          </div>
+          <div class="project">
+            <h3>One-Click-Pick (E-commerce Prototype)</h3>
+            <p>Static responsive e-commerce UI prototype built with HTML and CSS. Features category sections, navigation bar, and basic responsiveness.</p>
+            <p><strong>Tech:</strong> HTML, CSS</p>
+            <a href="https://github.com/Pintucsc22/one-click-pick" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>Computer Operator</strong> — M/S Biswakarma Rice Mill, Onda, Bankura (2020–2022)<br>
+            Maintained office systems, handled troubleshooting, printer setup, network maintenance, and created Excel reports.
+          </div>
+          <div class="timeline-item">
+            <strong>Instructor – Fitter</strong> — Khatra Govt. ITI, Bankura (2018–2020)<br>
+            Delivered hands-on technical training, maintained workshop logs, and ensured safety and process adherence.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-item"><strong>B.Tech (CSE)</strong> — Seacom Skill University, 2025 — 79%</div>
+          <div class="education-item"><strong>Diploma (Mechanical)</strong> — The New Horizons Institute of Technology, 2018 — 72%</div>
+          <div class="education-item"><strong>ITI (Fitter)</strong> — Durgapur Govt. ITI, 2015 — 74%</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Get in touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Email: <a href="mailto:pintugarai.csc22@gmail.com">pintugarai.csc22@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/Pintucsc22" target="_blank">Pintucsc22</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/pintugarai993" target="_blank">linkedin.com/in/pintugarai993</a></p>
+          </div>
+          <form action="mailto:pintugarai.csc22@gmail.com" method="post" enctype="text/plain">
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Message</label>
+            <textarea name="message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">© <span id="year"></span> Pintu Garai • Built with ❤️ • <a href="#about">Back to top</a></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
