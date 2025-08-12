@@ -80,7 +80,7 @@ portfolio/
 
 ## 📸 Preview
 
-![Portfolio Screenshot](assets/portfolio.png)
+![Portfolio Screenshot](/assets/portfolio.png)
 *(Make sure `portfolio.png` is placed inside the `assets` folder.)*
 
 ---
